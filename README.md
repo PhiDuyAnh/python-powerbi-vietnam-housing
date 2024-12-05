@@ -63,6 +63,30 @@ As previously discussed, due to the **impact** of geographical regions on house 
 
 ![image](https://github.com/user-attachments/assets/9a1d2899-6f57-48b3-a60c-a10cccb2645b)
 
+## 5. Data Visualization using Power BI
+**Power BI** stands out as one of the most **effective** tools for **visualizing** and **extracting key insights** from **raw data**. By utilizing its capabilities to create an **interactive dashboard**, we can gain a **deeper understanding** of the Vietnam Housing dataset, **uncover patterns**, and **derive valuable insights** into the Vietnamese real estate market.
+
+![image](https://github.com/user-attachments/assets/0d9fac14-a45d-4fd3-bb69-1ed2810de32e)
+![image](https://github.com/user-attachments/assets/56c8002d-8003-4970-b5cf-6239fade733a)
+
+### *Key Metrics*
+Leveraging **DAX (Data Analysis Expressions)** to calculate these measures:
+- Total House Listings
+- Average House Price (in billion VND)
+- Average House Area (in square meters)
+- Median Price per Square Meter
+
+### *Summary of Insights*
+1. **Ho Chi Minh City** accounts for the **largest proportion of listings** - **39%**. This **validates my reasoning** that Hanoi and Ho Chi Minh City are the 2 most crowded cities in Vietnam with extremely high housing demand and higher housing supply compared to other regions. Notably, the number of listings in Hanoi alone is equivalent to **80%** of the **combined listings** from all other cities while Ho Chi Minh City **surpasses** other cities by **20%**.
+2. **Average House Prices** in **Hanoi** and **Ho Chi Minh City** are also **markedly higher** than other cities as well: **6.21** for HCM City, **6.15** for Hanoi, **5.00** for Others. **Fully furnished** houses **understandably** have the **highest average price** compared to Partially furnished and Unfurnished houses in all three regions.
+3. Due to being **densely populated**, both **Hanoi** and **HCM City** have **significantly lower Average House Area** (**43.97** and **66.00**, respectively) in comparision with other cities (**104.36 square meters!**).
+4. However, due to the **expensiveness** of both **Hanoi** and **HCM City**, they have **much higher** **Median Price per Square Meter** than other cities: **0.149**, **0.100** and **0.051**, respectively.
+5. **Drilling through** the bar chart allows us to **dig deeper** into houses with **different bedrooms configuration**. Houses with **3 bedrooms** and **legally certified** has the **highest** total number of listings, at **7.5k**, which tells us the **preferences** of **Vietnamese** people.
+
+
+
+
+
 
 
 
