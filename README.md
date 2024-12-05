@@ -41,5 +41,28 @@ A **critical** step prior to implementing regression models is assessing the cor
 ![image](https://github.com/user-attachments/assets/f4660a0b-3785-4799-bb7b-91aeb8959147)
 
 - The decision to reduce the **address** column to **three unique values** (HN, HCM, and Others) stems from the fact that **Hanoi and Ho Chi Minh City** are the two **most densely populated cities** in Vietnam. Their population density far surpasses that of other cities in the country. The combination of limited land availability, resulting in a **constrained housing supply**, and a large population driving **high housing demand**, consistently leads to **significantly higher housing prices** in Hanoi and Ho Chi Minh City compared to other regions.
+- Furthermore, this approach also aligns with my decision to use **dummy variables** (0 and 1 value variables) in my regression models later on.
+
+## 4. Regression Models
+
+### Setting up Dummy Variables
+
+As previously discussed, due to the **impact** of geographical regions on house prices (particularly Hanoi and Ho Chi Minh City), I decided to create **2 dummy variables** (HN an HCMC) for the regression models.
+- HN = 1 and HCMC = 0 represent houses located in Hanoi.
+- HN = 0 and HCMC = 1 represent houses located in Ho Chi Minh City.
+- HN = 0 and HCMC = 0 represent houses located in cities other than Hanoi and Ho Chi Minh City.
+
+![image](https://github.com/user-attachments/assets/c1de635a-915d-4ca8-ae09-12c97d78b4cc)
+![image](https://github.com/user-attachments/assets/c02cdabc-02ce-4adb-8226-7486589e1250)
+
+### Results
+- **R² score** and **MSE (Mean Squared Error)** are the 2 metrics used to evaluate the models. Generally, a higher R² score and a lower MSE indicate a better-performing model. However, please bear in mind that there are also lots of **factors** to be taken into account such as the data itself may require different types of model, the true relationship between the variables, unobserved factors, etc.
+- Given the **simplicity** of the **Multiple Linear Regression** model for this dataset, which resulted in a **lower** R² score, I opted to implement a **Polynomial Regression** model and determined the **3rd order** as the most optimal choice.
+- **Ridge Regression** was employed to **reduce** the **magnitude of the coefficients** when working with **Polynomial Features**, leveraging the **hyperparameter Alpha**. Through the use of **GridSearchCV**, an optimal **Alpha** value of **10** was identified as the best estimator for the model.
+- Based **solely** on the results of **R² score** and **MSE** value, **Ridge Regression** is selected as the best model for this dataset. However, there remains a lot of **rooms for improvement**!
+
+![image](https://github.com/user-attachments/assets/9a1d2899-6f57-48b3-a60c-a10cccb2645b)
+
+
 
 
